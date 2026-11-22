@@ -1,18 +1,42 @@
-# React + Vite
+# LUMEN — лендинг стоматологічної клініки
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Односторінковий сайт для стоматологічної клініки: послуги, етапи лікування,
+команда лікарів, відгуки пацієнтів і форма онлайн-запису. Є перемикач
+світлої та темної теми й адаптивна верстка під телефони.
 
-Currently, two official plugins are available:
+![Десктоп](docs/desktop.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center"><img src="docs/mobile.png" width="300" alt="Мобільна версія"></p>
 
-## React Compiler
+## Можливості
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Світла / темна тема одним натисканням
+- Адаптивна верстка: десктоп, планшет, телефон
+- Плавна поява секцій під час прокрутки (`IntersectionObserver`)
+- Секції: головний екран, послуги, етапи лікування, команда, відгуки, запис
+- Форма запису з вибором послуги
+- Без UI-бібліотек: усі стилі та SVG-іконки написані вручну
 
-## Expanding the ESLint configuration
+## Технології
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# lumen-dental
-# lumen-dental
+React 19 · Vite · CSS (custom properties) · SVG
+
+## Запуск
+
+```bash
+npm install
+npm run dev      # режим розробки
+npm run build    # збірка в папку dist/
+```
+
+## Структура
+
+```
+src/
+├── DentalLanding.jsx   # уся сторінка: розмітка, дані, стилі
+├── App.jsx
+└── main.jsx
+```
+
+Тексти послуг, команди та відгуків зберігаються в масивах на початку
+`DentalLanding.jsx`, тому їх легко замінити під іншу клініку.

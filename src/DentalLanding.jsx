@@ -419,7 +419,7 @@ const css = `
 .lumen-page .badge-float{position:absolute; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:10px 16px; box-shadow:var(--shadow); display:flex; align-items:center; gap:10px; font-size:13px;}
 .lumen-page .badge-1{top:14%; right:-6%;}
 .lumen-page .badge-1 .chip{width:30px; height:30px; border-radius:9px; background:var(--coral-bg); color:var(--coral-ink); display:flex; align-items:center; justify-content:center; font-family:'Space Mono', monospace; font-weight:700; font-size:12px;}
-.lumen-page .badge-1 span.sub{color:var(--ink-soft); font-size:11.5px;}
+.lumen-page .badge-float span.sub{display:block; color:var(--ink-soft); font-size:11.5px;}
 .lumen-page .badge-2{bottom:8%; left:-8%;}
 .lumen-page .badge-2 .chip{width:32px; height:32px; border-radius:10px; background:var(--ink); color:var(--bg); display:flex; align-items:center; justify-content:center;}
 .lumen-page .badge-2 .chip svg{width:16px; height:16px;}
